@@ -1,8 +1,5 @@
 {
   "$schema": "https://railway.com/railway.schema.json",
-  "build": {
-    "buildCommand": "cd plain_sql && npm install"
-  },
   "deploy": {
     "startCommand": "cd plain_sql && node server.js"
   }

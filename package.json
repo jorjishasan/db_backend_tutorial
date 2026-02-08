@@ -1,0 +1,8 @@
+{
+  "name": "db_backend_tutorial",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "install": "cd plain_sql && npm install"
+  }
+}
