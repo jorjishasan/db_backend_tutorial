@@ -16,7 +16,7 @@ if (process.env.MYSQL_URL) {
     host: process.env.DB_HOST || 'localhost',
     user: process.env.DB_USER || 'root',
     password: process.env.DB_PASSWORD || '',
-    database: process.env.DB_NAME || 'notes_app',
+    database: process.env.DB_NAME || process.env.MYSQL_DATABASE || 'notes_app',
   };
 }
 
