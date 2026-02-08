@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Notes</h1>
+      <p class="tagline">Plain SQL + MySQL</p>
+    </header>
+
+    <section class="form-section">
+      <form id="note-form" class="note-form">
+        <input type="text" id="title" placeholder="Title" required autocomplete="off">
+        <textarea id="content" placeholder="Content (optional)" rows="3" autocomplete="off"></textarea>
+        <div class="form-actions">
+          <button type="submit" id="submit-btn">Add note</button>
+          <button type="button" id="cancel-btn" class="secondary" hidden>Cancel</button>
+        </div>
+      </form>
+      <input type="hidden" id="editing-id" value="">
+    </section>
+
+    <section class="notes-section">
+      <div id="error" class="error" role="alert" hidden></div>
+      <div id="loading" class="loading" hidden>Loading…</div>
+      <ul id="notes-list" class="notes-list"></ul>
+    </section>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
