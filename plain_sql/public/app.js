@@ -10,7 +10,7 @@ const loadingEl = document.getElementById('loading');
 
 // If deploying frontend separately (e.g. Netlify), set this to your backend URL (no trailing slash).
 // Example: 'https://sparkling-vision.up.railway.app'
-const API_BASE = 'https://sparkling-vision-production.up.railway.app'; 
+const API_BASE = 'https://dbbackendtutorial-production.up.railway.app'; 
 
 function showError(msg) {
   errorEl.textContent = msg;
